@@ -1,0 +1,10 @@
+# Post New Album
+POST http://localhost:8080/albums
+content-type: application/json
+
+{
+    "id": "5",
+    "title": "Ramayanam 2021",
+    "artist": "Kavalam",
+    "price": 200
+}

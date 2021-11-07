@@ -1,0 +1,8 @@
+# Get All Albums
+GET http://localhost:8080/albums
+
+# Get a Specific Album
+GET http://localhost:8080/albums/3
+
+# Try to get an album which is not available
+GET http://localhost:8080/albums/10
