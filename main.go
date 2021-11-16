@@ -5,15 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func init() {
-	// connect database
-	ConnectDatabase()
-}
-
 func main() {
 	router := gin.Default()
-
-	// CORS
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"*"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
@@ -22,9 +15,9 @@ func main() {
 		AllowWildcard:    true,
 		AllowCredentials: true,
 	}))
-
-	router.GET("/books", findBooks)
-  	router.GET("/books/:id", findBook)
+	router.GET("/albums", getAlbums)
+	router.GET("/albums/:id", getAlbumByID)
+	router.POST("/albums", postAlbums)
 
 	router.Run(":8080")
 }
