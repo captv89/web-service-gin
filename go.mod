@@ -5,6 +5,7 @@ go 1.17
 require (
 	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-gonic/gin v1.7.4
+	github.com/gocarina/gocsv v0.0.0-20211020200912-82fc2684cc48
 )
 
 require (

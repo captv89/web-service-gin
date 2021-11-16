@@ -2,7 +2,7 @@
 GET http://localhost:8080/albums
 
 # Get a Specific Album
-GET http://localhost:8080/albums/3
+GET http://localhost:8080/albums/SOCIWDW12A8C13D406
 
 # Try to get an album which is not available
-GET http://localhost:8080/albums/10
+GET http://localhost:8080/albums/SOCTESTSONG999

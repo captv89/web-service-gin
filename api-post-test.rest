@@ -3,8 +3,8 @@ POST http://localhost:8080/albums
 content-type: application/json
 
 {
-    "id": "5",
-    "title": "Ramayanam 2021",
+    "id": "SOCTESTSONG999",
+    "title": "Kili Paat Ramayanam",
     "artist": "Kavalam",
-    "price": 200
+    "year": "2020"
 }

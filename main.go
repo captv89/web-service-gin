@@ -5,6 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func init() {
+	// get data
+	readCsvData()
+}
+
 func main() {
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
