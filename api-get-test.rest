@@ -1,6 +1,10 @@
 # Get All Albums
 GET https://localhost/albums
 
+GET http://localhost:8080/albums
+
+GET http://whispering-hollows-56519.herokuapp.com:50845/albums
+
 # Get a Specific Album
 GET https://localhost/albums/SOCIWDW12A8C13D406
 
