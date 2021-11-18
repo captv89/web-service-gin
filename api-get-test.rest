@@ -1,8 +1,8 @@
 # Get All Albums
-GET http://localhost:8080/albums
+GET https://localhost/albums
 
 # Get a Specific Album
-GET http://localhost:8080/albums/SOCIWDW12A8C13D406
+GET https://localhost/albums/SOCIWDW12A8C13D406
 
 # Try to get an album which is not available
-GET http://localhost:8080/albums/SOCTESTSONG999
+GET https://localhost/albums/SOCTESTSONG999

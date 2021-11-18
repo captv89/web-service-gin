@@ -1,5 +1,5 @@
 # Post New Album
-POST http://localhost:8080/albums
+POST https://localhost/albums
 content-type: application/json
 
 {

@@ -24,5 +24,5 @@ func main() {
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)
 
-	router.Run(":8080")
+	router.RunTLS(":443", "./certs/server.crt", "./certs/server.key")
 }
