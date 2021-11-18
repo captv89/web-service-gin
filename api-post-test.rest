@@ -1,5 +1,16 @@
 # Post New Album
-POST https://localhost/albums
+POST http://localhost:8080/albums
+content-type: application/json
+
+{
+    "id": "SOCTESTSONG999",
+    "title": "Kili Paat Ramayanam",
+    "artist": "Kavalam",
+    "year": "2020"
+}
+
+#Heroku Test
+POST https://whispering-hollows-56519.herokuapp.com/albums
 content-type: application/json
 
 {

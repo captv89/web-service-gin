@@ -1,12 +1,14 @@
 # Get All Albums
-GET https://localhost/albums
-
 GET http://localhost:8080/albums
 
-GET http://whispering-hollows-56519.herokuapp.com:50845/albums
-
 # Get a Specific Album
-GET https://localhost/albums/SOCIWDW12A8C13D406
+GET http://localhost:8080/albums/SOCIWDW12A8C13D406
 
 # Try to get an album which is not available
-GET https://localhost/albums/SOCTESTSONG999
+GET http://localhost:8080/albums/SOCTESTSONG999
+
+#Heroku Test
+GET https://whispering-hollows-56519.herokuapp.com/albums
+
+GET https://whispering-hollows-56519.herokuapp.com/albums/SOCIWDW12A8C13D406
+
