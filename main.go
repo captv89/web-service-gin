@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
@@ -24,5 +26,9 @@ func main() {
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)
 
-	router.RunTLS(":443", "./certs/server.crt", "./certs/server.key")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "443" // Default port if not specified
+	}
+	router.RunTLS(":" + port, "./certs/server.crt", "./certs/server.key")
 }
