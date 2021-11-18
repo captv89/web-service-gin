@@ -25,7 +25,7 @@ func postAlbums(c *gin.Context) {
 	// Add the new Album to the slice.
 	albums = append(albums, newAlbum)
 	// Write Files to CSV
-	if err := writeCsvData() ; err != nil {
+	if err := writeCsvData(); err != nil {
 		fmt.Println(err)
 		c.IndentedJSON(http.StatusInternalServerError, gin.H{"message": "Error writing to CSV"})
 		panic(err)
